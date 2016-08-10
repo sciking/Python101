@@ -1,3 +1,4 @@
+#Variabili per il debug
 A = 10
 B = 20
 C = 30
@@ -9,6 +10,12 @@ R = 80
 def p101():
 	dent = raw_input(">")
 	global A,B,C,D,E,F,M,R
+	try:
+		int(dent)
+		M=int(dent)
+	except:
+		print ""
+
 #funzione per la stampa
 	if "#" in dent:
 		if "A" in dent:
@@ -72,3 +79,4 @@ def p101():
 	p101()
 	
 p101()
+	
